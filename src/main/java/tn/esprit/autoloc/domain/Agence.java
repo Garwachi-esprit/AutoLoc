@@ -26,6 +26,7 @@ public class Agence {
 
     @OneToMany(mappedBy = "agence", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Employe> employes = new ArrayList<>();
+    
 
     @OneToMany(mappedBy = "agence", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Vehicule> vehicules = new ArrayList<>();

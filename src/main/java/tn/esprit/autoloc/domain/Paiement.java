@@ -28,4 +28,5 @@ public class Paiement {
     @ManyToOne
     @JoinColumn(name = "contrat_id", nullable = false)
     private Contrat contrat;
+    
 }

@@ -27,6 +27,7 @@ public class Reservation {
     @ManyToOne
     @JoinColumn(name = "vehicule_id", nullable = false)
     private Vehicule vehicule;
+    
 
     @ManyToOne
     @JoinColumn(name = "client_id", nullable = false)

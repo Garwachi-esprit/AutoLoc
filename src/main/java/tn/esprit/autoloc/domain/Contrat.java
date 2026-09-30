@@ -26,9 +26,9 @@ public class Contrat {
     private Boolean valide;
 
     @OneToOne
-    @JoinColumn(name = "reservation_id", nullable = false, unique = true)
+    @JoinColumn(name = "reservation_id")
     private Reservation reservation;
 
-    @OneToMany(mappedBy = "contrat", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "contrat")
     private List<Paiement> paiements = new ArrayList<>();
 }

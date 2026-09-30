@@ -23,6 +23,6 @@ public class Maintenance {
     private String description;
 
     @ManyToOne
-    @JoinColumn(name = "vehicule_id", nullable = false)
+    @JoinColumn(name = "vehicule_id")
     private Vehicule vehicule;
 }

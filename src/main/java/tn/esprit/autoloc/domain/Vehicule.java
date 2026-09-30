@@ -33,10 +33,10 @@ public class Vehicule {
     private StatutVehicule statut;
 
     @ManyToOne
-    @JoinColumn(name = "agence_id", nullable = false)
+    @JoinColumn(name = "agence_id")
     private Agence agence;
 
-    @OneToMany(mappedBy = "vehicule", cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(mappedBy = "vehicule")
     private List<Maintenance> maintenances = new ArrayList<>();
 
     @ManyToMany
